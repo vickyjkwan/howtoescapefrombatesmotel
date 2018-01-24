@@ -24,7 +24,7 @@ In the age of _Yelp_ and _Google_ and _TripAdvisor_, there's hardly any (legit) 
 In this project, I present multifaceted study of building a recommender system for hotels based on their ratings and reviews on [Tripadvisor](https://www.tripadvisor.com). We will be looking at our _survival_ from Marion's perspective. She will need: a __map__, a __compass__, and (really desperate for mass production and high quality user experience) a __helicopter__.
 
 - A __Map__ of hotels grouped by similar features like this:
-<img src='img/static_hotel_clusters.png' style="float: center; height: 300px;" alt="Drawing">
+<img src='img/static_clusters.png' style="float: center; height: 300px;" alt="Drawing">
 
 - A __Compass__ to direct us in the high dimensional space, to find the hotel that's most similar to our favorite:
 <img src='img/KDTree-animation.gif' style="float: center; height: 300px;" alt="Drawing">
