@@ -1,0 +1,17 @@
+<h2>Hotel list</h2>
+
+{% if hotel_list %}
+<div>
+    {% for hotel in hotel_list %}
+    <div>
+        <h4><a href="{% url 'reviews:hotel_detail' hotel.id %}">
+        {{ hotel.name }}
+        </a></h4>
+        <h5>{{ hotel.review_set.count }} reviews</h5>
+        <h5>{{ hotel.average_rating | floatformat }} average rating</h5>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+    <p>No hotels are available.</p>
+{% endif %}
