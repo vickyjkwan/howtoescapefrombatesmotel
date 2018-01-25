@@ -100,7 +100,6 @@ For the kNN baseline model, I also wrote a parallelized algorithm that computes 
 
 These two hotels have received similar average ratings over the 7 dimensions as we can eye-compare from below:
 
-<img src='img/radar.png' style="float: center; height: 10px;" alt="Drawing">
 
 Next Steps:
 - Use heapmax to get k nearest neighbors, say, 5 most similar hotels based on the 7 dimensions.
