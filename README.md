@@ -73,7 +73,7 @@ Two take-aways:
 
 
 To compensate the restriction of a manually chosen k for the k-means clustering, I also presented a hierarchical clustering, represented in the form of a dendrogram as below:
-<img src='img/ward_clusters.png' style="float: center; height: 2000px;" alt="Drawing">
+<img src='img/hierarchical_cluster.png' style="float: center; height: 2000px;" alt="Drawing">
 
 For more about procedural details, please refer to [__Clustering using NLP__](src/clustering_using_nlp.ipynb)
 
