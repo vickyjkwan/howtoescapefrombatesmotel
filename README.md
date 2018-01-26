@@ -38,7 +38,7 @@ In this project, I present multifaceted study of building a recommender system f
 <a id='Data Overview'></a>
 
 ## Data Overview
-data set
+I used a dataset consists of over 1 million users that have signed up on TripAdvisor.com and have rated for over 12,000 hotels during 2002 and 2012.
 
 <a id='kmeans'></a>
 
