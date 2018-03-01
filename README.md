@@ -119,11 +119,13 @@ Matrix factorization amounts to mapping features of user and item via linear com
 
 In this project, I used Surprise, an easy-to-use Python scikit for recommender systems, to cross validate four different MF models. The GitHub for this library can be found here: https://github.com/NicolasHug/Surprise/tree/9e96cda9d28d0e4b8e02da56599a6c1837d1a84c
 
-The evaluations for the Singular Value Decomposition (SVD), Non-negative Matrix Factorization (NMF), SlopeOne, CoClustering, compared with the Baseline model are shown on the below chart:
+When recommending Top-5 hotels to each user, the evaluations for the Singular Value Decomposition (SVD), Non-negative Matrix Factorization (NMF), SlopeOne, CoClustering, compared with the Baseline model are shown on the below chart:
 
 <img src='img/mf_eval.png' style="float: center; height: 10px;" alt="Drawing">
 
+CoClustering model with a cluster number of 5 for the user group, and 5 for the hotel group has the best recommender ability. Both of the precision score and FCP score are the highest among the five models. Each model's parameters were tuned by grid search over a set of possible values.
 
+The CoCluster model takes into account the user group centroids and the hotel group centroids, and predict based on the sub-group preferences among those clusters. This is a remedy to the sparsity of our case. More details about CoCluster algorithm can be found in this paper: 'Factorization Meets the Neighborhood: a Multifaceted Collaborative Filtering Model' (http://www.cs.rochester.edu/twiki/pub/Main/HarpSeminar/Factorization_Meets_the_Neighborhood-_a_Multifaceted_Collaborative_Filtering_Model.pdf)
 
 
 <a id='hotelrecommender'></a>
