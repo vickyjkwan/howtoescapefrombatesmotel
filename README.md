@@ -5,8 +5,8 @@
 Vicky Kwan, Jan 2018
 
 ## Contents:
-- [Motivation](#Motivation)
-- [Data Overview](#Data Overview)
+- __[Motivation](#Motivation)__
+- __[Data Overview](#Data Overview)__
 - __The Map__ ([K-means clustering](#kmeans))
 - __The Compass__ ([Nearest Neighbor Retrieval](#nearestneighbor))
 - __The Helicopter__ (Matrix factorization models)
