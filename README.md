@@ -9,7 +9,7 @@ Vicky Kwan, Jan 2018
 - __[Data Overview](#dataoverview)__
 - __The Map__ ([K-means clustering](#kmeans))
 - __The Compass__ ([Nearest Neighbor Retrieval](#nearestneighbor))
-- __The Helicopter__ (Matrix factorization models)
+- __The Helicopter__ ([Matrix factorization models](#matrixfact))
 - The Hotel Recommender (In Progress)
 - Conclusion
 
@@ -108,6 +108,23 @@ Next Steps:
 - Apply kd tree technique in subsets of parallelized data.
 
 For more about procedural details, please refer to [__nearest hotel__](src/nearest_hotel.ipynb)
+
+<a id='matrixfact'></a>
+
+## Matrix Factorization Models
+
+The previous Nearest Neighbor model is one of the Collaborative Filtering models. CF covers local information of target user for the sake of neighborhood methods, while Matrix Factorization covers global information.
+
+Matrix factorization amounts to mapping features of user and item via linear combination to latent factor space respectively. Then calculating the similarity via inner-product of latent user factor and latent item factor.
+
+In this project, I used Surprise, an easy-to-use Python scikit for recommender systems, to cross validate four different MF models. The GitHub for this library can be found here: https://github.com/NicolasHug/Surprise/tree/9e96cda9d28d0e4b8e02da56599a6c1837d1a84c
+
+The evaluations for the Singular Value Decomposition (SVD), Non-negative Matrix Factorization (NMF), SlopeOne, CoClustering, compared with the Baseline model are shown on the below chart:
+
+<img src='img/mf_eval.png' style="float: center; height: 10px;" alt="Drawing">
+
+
+
 
 <a id='hotelrecommender'></a>
 
