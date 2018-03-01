@@ -6,7 +6,7 @@ Vicky Kwan, Jan 2018
 
 ## Contents:
 - __[Motivation](#Motivation)__
-- __[Data Overview](#Data Overview)__
+- __[Data Overview](#dataoverview)__
 - __The Map__ ([K-means clustering](#kmeans))
 - __The Compass__ ([Nearest Neighbor Retrieval](#nearestneighbor))
 - __The Helicopter__ (Matrix factorization models)
@@ -35,7 +35,7 @@ In this project, I present multifaceted study of building a recommender system f
 
 <img src='img/spiderman_helicopter.png' style="float: center; height: 100px;" alt="Drawing">
 
-<a id='Data Overview'></a>
+<a id='dataoverview'></a>
 
 ## Data Overview
 I used a dataset consists of over 1 million users that have signed up on TripAdvisor.com and have rated for over 12,000 hotels during 2002 and 2012.
